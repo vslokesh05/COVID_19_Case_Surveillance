@@ -1,10 +1,14 @@
-# COVID-19 Case Surveillance  Using Tableau
+# COVID-19 Case Surveillance: Storytelling Using Tableau and Power BI  
 
-**View the dashboard on Tableau Public**:  
-[COVID-19 Case Surveillance Dashboard](https://public.tableau.com/app/profile/lokesh.velmurugan.sujatha/viz/COVID_19_Case_Surveillance/Dashboard1)
+**View the Tableau Dashboard**:  
+[COVID-19 Case Surveillance Dashboard (Tableau)](https://public.tableau.com/app/profile/lokesh.velmurugan.sujatha/viz/COVID_19_Case_Surveillance/Dashboard1)  
+
+**View the Power BI Dashboard**:  
+[COVID-19 Case Surveillance Dashboard (Power BI)](https://app.powerbi.com/view?r=eyJrIjoiZmM5NDE0OGEtNjFkMi00M2FjLTg4MTMtYTBiNmNjMWRjODQxIiwidCI6Ijk2NDY0YThhLWY4ZWQtNDBiMS05OWUyLTVmNmI1MGEyMDI1MCIsImMiOjN9&pageName=31dab1e5546d97341540)
+
 
 ## Project Overview  
-This Tableau visualization project provides a comprehensive analysis of COVID-19 case surveillance data, focusing on infection rates, demographic patterns, hospitalization trends, and mortality statistics. The project is designed to support decision-making by public health officials, researchers, and policymakers through visually compelling and actionable insights. Each visualization tells a unique story, offering a detailed understanding of the pandemic's impact across various population segments.
+This visualization project provides a comprehensive analysis of COVID-19 case surveillance data, focusing on infection rates, demographic patterns, hospitalization trends, and mortality statistics. By leveraging the capabilities of both Tableau and Power BI, this project supports decision-making by public health officials, researchers, and policymakers. The interactive dashboards created with these tools tell compelling stories and reveal actionable insights into the pandemic's impact across various population segments.  
 
 
 ## Data Preparation  
@@ -16,35 +20,38 @@ This Tableau visualization project provides a comprehensive analysis of COVID-19
 1. **Error Correction**: Resolved inconsistencies in reported values for fields such as hospitalization and ICU admissions.  
 2. **Handling Missing Values**: Applied filtering to exclude records with missing, unknown, or invalid values for critical columns like gender and race/ethnicity.  
 3. **Normalization**: Standardized formats for date and categorical fields to ensure consistency.  
-4. **Derived Metrics**: Created calculated fields for advanced analysis, such as case-to-death ratios and demographic-based segmentation.  
+4. **Derived Metrics**: Created calculated fields and measures to analyze case-to-death ratios and demographic-based segmentation effectively.  
 
 
 ## Visualization and Insights  
 
 **Tools Used**  
-- **Tableau Desktop**: Designed interactive visualizations and dashboards for granular analysis.  
-- **Tableau Public**: Published the project for easy access by a broader audience.  
+- **Tableau Desktop**: Designed interactive dashboards for detailed analysis.  
+- **Tableau Public**: Published the Tableau dashboard for broader audience access.  
+- **Power BI Desktop**: Developed engaging visuals and reports with advanced DAX calculations.  
+- **Power BI Service**: Published Power BI reports for collaboration and accessibility.  
 
-**Key Visualizations**  
+**Key Visualizations (in both Tableau and Power BI)**  
+
 1. **Gender-Based Pie Charts**:  
    - **Story**: Highlights COVID-19 infection and death rates by gender.  
    - **Insights**: Infection rates are similar across genders, but mortality is higher in males.  
-   - **Design Principles**: Utilized the Gestalt principle of similarity with consistent color schemes for gender representation.  
+   - **Design Principles**: Utilized similarity in color schemes and clear labels for readability.  
 
 2. **Monthly Trends (Line and Bar Charts)**:  
    - **Story**: Depicts the rise and fall of active cases and death counts over time.  
    - **Insights**: Spikes in cases and deaths are evident in April 2020, followed by fluctuations.  
-   - **Design Principles**: Applied the principle of continuity for seamless trend visualization.  
+   - **Design Principles**: Combined line and bar charts to display trends seamlessly.  
 
-3. **Age and Gender Analysis (Bar Charts)**:  
+3. **Age and Gender Analysis (Stacked Bar Charts)**:  
    - **Story**: Examines confirmed and probable cases across age groups and genders.  
    - **Insights**: Cases peak in the 50–59 age group, with males showing slightly higher confirmed cases.  
-   - **Design Principles**: Leveraged similarity in color coding for confirmed and probable cases.  
+   - **Design Principles**: Consistent color coding for categories with dynamic tooltips for deeper insights.  
 
 4. **Hospitalization and ICU Admissions (Pie Charts)**:  
    - **Story**: Illustrates gender differences in hospitalization and ICU admissions.  
    - **Insights**: Females are less likely to require ICU care compared to males.  
-   - **Design Principles**: Used contrasting colors for better differentiation and clarity.  
+   - **Design Principles**: Used contrasting colors and clean layouts for clarity.  
 
 5. **Race/Ethnicity and Age Heatmaps**:  
    - **Story**: Explores infection and death rates across races and age groups.  
@@ -52,36 +59,39 @@ This Tableau visualization project provides a comprehensive analysis of COVID-19
      - Highest infections: Age group 50–59, White Non-Hispanic.  
      - Highest deaths: Age group 80+, White Non-Hispanic.  
      - Native Hawaiian/Other Pacific Islander groups show lower infection and mortality rates, indicating higher immunity.  
-   - **Design Principles**: Improved spacing (proximity) and intensity gradients for readability and emphasis.  
+   - **Design Principles**: Enhanced spacing and intensity gradients for better readability.  
 
 
 ## Dashboard Design  
-The dashboard integrates these visualizations to provide an interactive, cohesive narrative:  
+
+The dashboards integrate these visualizations into an interactive, cohesive narrative:  
 - **Purpose**: Highlight key COVID-19 trends, including case distribution, gender and age impacts, and demographic insights.  
 - **Design Concepts**:  
-  - Interactive filters allow users to explore specific subgroups (e.g., gender, age, race).  
-  - Continuity ensures a logical flow between visuals.  
-  - Consistent color schemes and layout enhance readability and user engagement.  
+  - **Interactive Filters**: Allow users to explore specific subgroups (e.g., gender, age, race).  
+  - **Continuity**: Ensures a logical flow between visuals for an intuitive user experience.  
+  - **Cross-Filtering and Slicers (Power BI)**: Enable dynamic interactivity and deeper analysis.  
+  - **Consistent Color Schemes**: Enhance readability and visual appeal.  
+
 
 ## Process and Key Takeaways  
 
 1. **Visual Development**:  
-   - Analyzed the dataset to understand key variables and trends.  
-   - Generated questions to guide visualization creation (e.g., which demographics are most affected?).  
-   - Created calculated fields and tailored visuals to address these questions effectively.  
+   - Analyzed the dataset to identify key variables and trends.  
+   - Created calculated fields (Tableau) and DAX measures (Power BI) to address analytical questions.  
+   - Tailored visuals to communicate insights effectively.  
 
 2. **Challenges Encountered**:  
-   - Managed a high volume of missing and unknown data by applying filters.  
-   - Resolved inconsistencies in hospitalization and ICU admission records.  
+   - Managed missing and inconsistent data by applying conditional transformations.  
+   - Optimized performance in Power BI by refining the data model and reducing report load times.  
 
 3. **Insights Gained**:  
    - Gender, age, and race significantly influence COVID-19 outcomes.  
-   - Seasonal trends show patterns of spikes and declines in case counts and mortality.  
+   - Temporal trends reveal spikes and declines in cases and mortality.  
 
 4. **Audience Persona**:  
-   - **Primary Audience**: Public health departments, to design targeted interventions.  
-   - **Secondary Audience**: General public, to raise awareness and encourage preventive measures.  
-
+   - **Primary Audience**: Public health departments, for targeted interventions.  
+   - **Secondary Audience**: General public, for awareness and preventive measures.  
 
 ## Conclusion  
-This project transforms raw COVID-19 data into a powerful storytelling tool, revealing critical patterns and offering actionable insights. By visualizing complex datasets in an accessible format, the project empowers stakeholders to make informed decisions in managing public health challenges.  
+This project transforms raw COVID-19 data into actionable insights using Tableau and Power BI. By simplifying complex datasets and presenting them through interactive dashboards, this project empowers stakeholders to make informed decisions to combat public health challenges effectively.  
+
